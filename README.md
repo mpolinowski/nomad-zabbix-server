@@ -34,7 +34,7 @@ Run `nomad plan zabbix-server.tf` to provision the service to your data center `
 ### Ports used
 
 * `web_front = 8080` (Zabbix frontend - sign-in with default `Admin`/`zabbix`)
-* `server_active = 8080` (Port used for active checks)
+* `server_active = 10051` (Port used for active checks)
 * `postgres_db = 5432` (Database port)
 
 
