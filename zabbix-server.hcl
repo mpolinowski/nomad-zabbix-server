@@ -55,7 +55,7 @@ job "zabbix_server" {
 
             config {
                 network_mode = "host"
-                image = "zabbix/zabbix-server-pgsql:6.2-alpine-latest"
+                image = "zabbix/zabbix-server-pgsql:7.0-alpine-latest"
                 force_pull = false
                 ports = ["server_active"]
                 volumes = [
@@ -111,7 +111,7 @@ job "zabbix_server" {
 
             config {
                 network_mode = "host"
-                image = "postgres:15-alpine3.16"
+                image = "postgres:16-alpine"
                 force_pull = false
                 ports = ["postgres_db"]
 
@@ -155,7 +155,7 @@ job "zabbix_server" {
 
             config {
                 network_mode = "host"
-                image = "zabbix/zabbix-web-nginx-pgsql:6.2-alpine-latest"
+                image = "zabbix/zabbix-web-nginx-pgsql:7.0-alpine-latest"
                 force_pull = false
                 ports = ["web_front"]
 
